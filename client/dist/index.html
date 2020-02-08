@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Tay Proxy</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <link
       rel="stylesheet"
@@ -38,12 +38,20 @@
       type="text/css"
       href="http://saskatchewanizon-env.ed33rmniub.us-east-2.elasticbeanstalk.com/styles/carouselStyle.css"
     />
+
+    <!-- Travis -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/style.css"
+    />
     <!-- Roy -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -59,29 +67,41 @@
       type="text/css"
       href="http://descriptions-env.62m3r6bcww.us-east-2.elasticbeanstalk.com/main.css"
     />
+    <link rel="stylesheet" type="text/css" href="proxy.css" />
   </head>
   <body>
-   <div id="proxy-root"></div>
-   <script src="bundle.js"></script>
-   <script
-            type="text/javascript"
-            src="http://nodedockersearch-env.z6b7pgpgn9.us-east-2.elasticbeanstalk.com/bundle.js"
-          ></script>
-   <script
-            type="text/javascript"
-            src="http://fecimages-env.pjpdatnnmu.us-east-1.elasticbeanstalk.com/bundle.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="http://descriptions-env.62m3r6bcww.us-east-2.elasticbeanstalk.com/bundle.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="http://canadaamazon-env.28zuhv6c2t.us-east-2.elasticbeanstalk.com/bundle.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="http://saskatchewanizon-env.ed33rmniub.us-east-2.elasticbeanstalk.com/bundle.js"
-          ></script>
+    <div id="proxy-root"></div>
+    <script src="bundle.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="popover"]').popover({
+          trigger: "hover"
+        });
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="http://nodedockersearch-env.z6b7pgpgn9.us-east-2.elasticbeanstalk.com/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://fecimages-env.pjpdatnnmu.us-east-1.elasticbeanstalk.com/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://descriptions-env.62m3r6bcww.us-east-2.elasticbeanstalk.com/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://amazonproj-env.uee7t6cmb9.us-east-2.elasticbeanstalk.com/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://canadaamazon-env.28zuhv6c2t.us-east-2.elasticbeanstalk.com/bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://saskatchewanizon-env.ed33rmniub.us-east-2.elasticbeanstalk.com/bundle.js"
+    ></script>
   </body>
 </html>

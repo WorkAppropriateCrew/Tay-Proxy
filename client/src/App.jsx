@@ -27,7 +27,7 @@ export default class App extends React.Component {
         <Cell middle style={{ display: "flex" }} area="tay-comp">
           <div
             id="tay-prodimage"
-            style={{ display: "flex", verticalAlign: "top", alignSelf: "top" }}
+            style={{ verticalAlign: "top", alignSelf: "top" }}
           ></div>
         </Cell>
         <Cell middle style={{ display: "flex" }} area="roy-comp">
